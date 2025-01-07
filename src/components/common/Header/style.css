@@ -1,0 +1,64 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: var(--black);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo { 
+    font-size: 1rem;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.link {
+    color: var(--grey);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.link:hover {
+    color: var(--white);
+    transition: all 3s;
+}
+
+.mobile-drawer {
+    display: none;
+}
+
+@media only screen and (max-width: 800px){
+    .navbar{
+        padding: 1.5rem;
+    }
+    
+    .link {
+        font-size: 0.75rem ;
+    }
+    .logo {
+        font-size: 0.8rem;
+    }
+    
+    .links {
+        display: none;
+    }
+
+    .mobile-drawer {
+        display: block;
+    }
+    
+    .drawer-div {
+        width: 30vw;
+        background-color: var(--black);
+        height: 100vh;
+        padding: 1.5rem ;
+    }
+}

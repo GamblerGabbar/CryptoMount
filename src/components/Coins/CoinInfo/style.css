@@ -1,0 +1,18 @@
+.coin-info {
+    padding-top: 1rem;
+}
+.desc-info{
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+.desc-info a {
+    text-decoration: underline !important;
+    color: inherit; /* Maintain current text color */
+}
+
+.desc-info a:hover,
+.desc-info a:focus {
+    color: var(--blue) !important;
+    outline: none;
+}

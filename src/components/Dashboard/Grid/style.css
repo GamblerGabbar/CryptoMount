@@ -1,0 +1,150 @@
+.grid-contain{
+    width: 300px;
+    background-color: var(--darkgrey);
+    border: 2px solid var(--darkgrey);
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.grid-contain:hover{
+border-color: var(--green);
+transition: all 0.3s;
+}
+
+.grid-cointainer-red:hover{
+border-color: var(--red);
+transition: all 0.3s;
+}
+
+.info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 1.5rem;
+}
+
+.logo {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.c-sym {
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.c-name{
+    color: var(--grey);
+    text-transform: capitalize;
+    font-weight: light;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.chip-flex{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem 1.5rem;
+}
+
+.price-chip{
+    border: 2px solid var(--green);
+    border-radius: 2rem;
+    padding: 0.35rem 1.25rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--green);
+    font-size: 1rem;
+    min-width: 50px;
+}
+
+.price-chip:hover,
+.icon:hover{
+    background-color: var(--green);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.chip-red{
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+
+.chip-red:hover,
+.icon-red:hover{
+    background-color: var(--red);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+
+
+.icon{
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    height: 2rem !important;
+   width: 2rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green);
+    font-size: 1rem;
+}
+
+.icon-red{
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+
+.info-Container{
+    margin: 0rem 1.5rem;
+}
+
+h3{
+    align-items: center;
+    color: var(--green);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0rem;
+
+}
+
+.total-vol,
+.total-cap{
+    align-items: center;
+    color: var(--grey);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.watchlist-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    color: var(--green);
+    padding: 0.5rem;
+    height: 1.5rem;
+    width: 1.5rem !important;
+  }
+  
+  .watchlist-icon-red {
+    border: 2px solid var(--red);
+    color: var(--red);
+  }

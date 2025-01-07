@@ -1,0 +1,13 @@
+.toggle-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.toggle-btn{
+    .toggle-btn{
+        font-size: 0.7rem !important;
+        padding: 0.5rem !important;
+    }
+}

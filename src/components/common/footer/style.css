@@ -1,0 +1,81 @@
+/* Ensure the app container spans the full height and uses flexbox */
+.app {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  /* Allow content to grow and push footer to the bottom */
+  .app-content {
+    flex: 1;
+    padding: 2rem; /* Optional: Add some padding */
+  }
+  
+  /* Footer styles remain the same */
+  .footer {
+    width: 100%;
+    background: rgba(31, 83, 198, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.125);
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.social-link {
+    color: var(--white);
+    font-size: 2rem !important;
+    transition: all 0.2s ease-in-out !important;
+    opacity: 0.8;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 800px) {
+    .footer {
+        padding: 0.5rem;
+    }
+
+    .social-links {
+        gap: 0.5rem;
+    }
+
+    .social-link {
+        font-size: 1.5rem !important;
+    }
+
+    .app-content {
+        padding-bottom: 60px; /* Adjusted for mobile */
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .footer {
+        background: rgba(31, 83, 198, 0.1);
+        border-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .social-link {
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* Hover effect */
+.footer:hover {
+    background: rgba(31, 83, 198, 0.3);
+}
